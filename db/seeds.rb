@@ -17,8 +17,8 @@ peninsula.save
 
 puts "hotels puts in database"
 
-
 Hotel.create(name: "Four Seasons Whistler", location: "Whistler, Canada")
+
 Hotel.create(name: "Motel 8", location: "Waukesha, WI")
 
 Hotel.create(name: "B Ocean", location: "Lake Buena Vista, FL")

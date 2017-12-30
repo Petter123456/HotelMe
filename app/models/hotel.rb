@@ -11,4 +11,9 @@ class Hotel < ApplicationRecord
 
   #require, name for a new hotel.
   validates :name , presence: true
+
+  def to_s
+    return self.name
+  end
+
 end
