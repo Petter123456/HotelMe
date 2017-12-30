@@ -7,13 +7,12 @@ class Hotel < ApplicationRecord
   #   "This is room service, how may i help you"
   # end
 
-
-
-  #require, name for a new hotel.
-  validates :name , presence: true
+  has_many :rooms # Specifies that a hotel can have many rooms. Have to be in place in order for the rooms to correlate witht he the hotel table.
+  validates :name , presence: true # require, name for a new hotel.
 
   def to_s
-    return self.name
+    return self.name.split.map(&:capitalize)*' '
   end
+
 
 end
